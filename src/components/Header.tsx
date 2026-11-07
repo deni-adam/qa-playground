@@ -1,6 +1,8 @@
 import { Box, Flex, HStack, Text } from '@chakra-ui/react'
 import { Link } from '@tanstack/react-router'
 import SearchBar from './search/SearchBar'
+import UserMenu from './auth/UserMenu'
+import CartButton from './cart/CartButton'
 
 export default function Header() {
   return (
@@ -55,9 +57,15 @@ export default function Header() {
             </Link>
           </HStack>
         </Box>
-        <Box width="250px">
-          <SearchBar />
-        </Box>
+
+        <Flex align="center" gap={4}>
+          <Box width="250px">
+            <SearchBar />
+          </Box>
+
+          <UserMenu />
+          <CartButton />
+        </Flex>
       </Flex>
     </Box>
   )
