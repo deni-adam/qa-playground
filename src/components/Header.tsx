@@ -1,5 +1,6 @@
 import { Box, Flex, HStack, Text } from '@chakra-ui/react'
 import { Link } from '@tanstack/react-router'
+import SearchBar from './search/SearchBar'
 
 export default function Header() {
   return (
@@ -53,6 +54,9 @@ export default function Header() {
               <Text as="span">Bestsellers</Text>
             </Link>
           </HStack>
+        </Box>
+        <Box width="250px">
+          <SearchBar />
         </Box>
       </Flex>
     </Box>
