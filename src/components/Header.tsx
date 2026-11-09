@@ -1,60 +1,45 @@
 import { Box, Flex, HStack, Text } from '@chakra-ui/react'
-import { Link } from '@tanstack/react-router'
+import { Link as RouterLink } from '@tanstack/react-router'
 import SearchBar from './search/SearchBar'
 import UserMenu from './auth/UserMenu'
 import CartButton from './cart/CartButton'
+import NavLink from './navigation/NavLink'
 
 export default function Header() {
   return (
-    <Box as="header" width="100%" borderBottomWidth="1px">
+    <Box
+      as="header"
+      width="100%"
+      bg="background.surface"
+      color="text.primary"
+      borderBottomWidth="1px"
+      borderColor="border.default"
+    >
       <Flex
         maxWidth="1200px"
         marginX="auto"
-        padding="16px"
+        paddingX="32px"
+        height="72px"
         align="center"
         justify="space-between"
       >
-        <Link to="/">
-          <Text fontSize="2xl" fontWeight="bold">
+        <RouterLink to="/">
+          <Text
+            fontFamily="heading"
+            fontSize="2xl"
+            fontWeight="700"
+            color="brand.primary"
+            letterSpacing="-0.015em"
+          >
             Bookly
           </Text>
-        </Link>
+        </RouterLink>
 
         <Box as="nav" aria-label="Main navigation">
           <HStack gap={6}>
-            <Link
-              to="/books"
-              activeProps={{
-                style: {
-                  fontWeight: 'bold',
-                  textDecoration: 'underline',
-                },
-              }}
-            >
-              <Text as="span">Books</Text>
-            </Link>
-            <Link
-              to="/categories"
-              activeProps={{
-                style: {
-                  fontWeight: 'bold',
-                  textDecoration: 'underline',
-                },
-              }}
-            >
-              <Text as="span">Categories</Text>
-            </Link>
-            <Link
-              to="/bestsellers"
-              activeProps={{
-                style: {
-                  fontWeight: 'bold',
-                  textDecoration: 'underline',
-                },
-              }}
-            >
-              <Text as="span">Bestsellers</Text>
-            </Link>
+            <NavLink to="/books">Books</NavLink>
+            <NavLink to="/categories">Categories</NavLink>
+            <NavLink to="/bestsellers">Bestsellers</NavLink>
           </HStack>
         </Box>
 
