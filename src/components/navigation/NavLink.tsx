@@ -4,9 +4,10 @@ import { Link as RouterLink } from '@tanstack/react-router'
 type NavLinkProps = {
   to: '/books' | '/categories' | '/bestsellers'
   children: React.ReactNode
+  onClick?: () => void
 }
 
-export default function NavLink({ to, children }: NavLinkProps) {
+export default function NavLink({ to, children, onClick }: NavLinkProps) {
   return (
     <ChakraLink
       asChild
@@ -25,7 +26,8 @@ export default function NavLink({ to, children }: NavLinkProps) {
         textDecoration: 'underline',
       }}
     >
-      <RouterLink to={to} activeOptions={{ exact: true }}>
+      ř existujícího ChakraLink změň pouze RouterLink:
+      <RouterLink to={to} activeOptions={{ exact: true }} onClick={onClick}>
         {children}
       </RouterLink>
     </ChakraLink>
