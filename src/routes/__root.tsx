@@ -53,10 +53,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <Provider>
-        <Header />
-        {children}
-        <Footer />
-         </Provider>
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
         <TanStackDevtools
           config={{
             position: 'bottom-right',

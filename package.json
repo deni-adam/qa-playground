@@ -10,9 +10,9 @@
     "generate-routes": "tsr generate",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint",
-    "format": "prettier --write . && eslint --fix",
-    "check": "prettier --check .",
+    "lint": "eslint src",
+    "format": "prettier --write src && eslint src --fix",
+    "check": "prettier --check src",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -1,9 +1,4 @@
-
-import {
-  createSystem,
-  defaultConfig,
-  defineConfig,
-} from '@chakra-ui/react'
+import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react'
 
 const config = defineConfig({
   theme: {
@@ -31,23 +26,23 @@ const config = defineConfig({
         heading: { value: "'Plus Jakarta Sans', sans-serif" },
         body: { value: "'Inter', sans-serif" },
       },
-fontSizes: {
-  xs: { value: '12px' },
-  sm: { value: '14px' },
-  md: { value: '16px' },
-  lg: { value: '18px' },
-  xl: { value: '20px' },
-  '2xl': { value: '24px' },
-  '3xl': { value: '32px' },
-  '4xl': { value: '40px' },
-  '5xl': { value: '56px' },
-},
-radii: {
-  sm: { value: '6px' },
-  md: { value: '10px' },
-  lg: { value: '16px' },
-  xl: { value: '24px' },
-},
+      fontSizes: {
+        xs: { value: '12px' },
+        sm: { value: '14px' },
+        md: { value: '16px' },
+        lg: { value: '18px' },
+        xl: { value: '20px' },
+        '2xl': { value: '24px' },
+        '3xl': { value: '32px' },
+        '4xl': { value: '40px' },
+        '5xl': { value: '56px' },
+      },
+      radii: {
+        sm: { value: '6px' },
+        md: { value: '10px' },
+        lg: { value: '16px' },
+        xl: { value: '24px' },
+      },
     },
   },
   globalCss: {
