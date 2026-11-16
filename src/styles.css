@@ -1,10 +1,9 @@
-
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Bookly global styles */
 
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color-scheme: light;
 }
 
@@ -21,7 +20,7 @@ body {
   margin: 0;
   background-color: #fafbff;
   color: #202e4a;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
