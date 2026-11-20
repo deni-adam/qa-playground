@@ -65,7 +65,6 @@ export default function Header() {
               <IoBook
                 size={34}
                 fill="currentColor"
-                strokeWidth={1}
                 aria-hidden="true"
               />
             </Box>
