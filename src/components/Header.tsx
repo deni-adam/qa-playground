@@ -62,11 +62,7 @@ export default function Header() {
                 transform: 'translateX(-50%)',
               }}
             >
-              <IoBook
-                size={34}
-                fill="currentColor"
-                aria-hidden="true"
-              />
+              <IoBook size={34} fill="currentColor" aria-hidden="true" />
             </Box>
 
             <Text
