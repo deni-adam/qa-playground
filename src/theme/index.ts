@@ -21,6 +21,12 @@ const config = defineConfig({
           mint: { value: '#DDEFE9' },
           peach: { value: '#F8E7DA' },
         },
+
+        neutral: {
+          0: { value: '#FFFFFF' },
+          50: { value: '#FAFBFF' },
+          200: { value: '#DCE5F2' },
+        },
       },
       fonts: {
         heading: { value: "'Plus Jakarta Sans', sans-serif" },
@@ -42,6 +48,30 @@ const config = defineConfig({
         md: { value: '10px' },
         lg: { value: '16px' },
         xl: { value: '24px' },
+      },
+    },
+    semanticTokens: {
+      colors: {
+        brand: {
+          primary: { value: '{colors.brand.900}' },
+          secondary: { value: '{colors.brand.500}' },
+        },
+        text: {
+          primary: { value: '{colors.navy.900}' },
+          secondary: { value: '{colors.navy.600}' },
+        },
+        background: {
+          page: { value: '{colors.neutral.50}' },
+          surface: { value: '{colors.neutral.0}' },
+          subtle: { value: '{colors.brand.50}' },
+        },
+        border: {
+          default: { value: '{colors.neutral.200}' },
+          interactive: { value: '{colors.brand.300}' },
+        },
+        focus: {
+          ring: { value: '{colors.brand.500}' },
+        },
       },
     },
   },
