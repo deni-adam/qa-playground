@@ -1,7 +1,7 @@
 import { Box, Text, HStack, VStack, Icon, SimpleGrid } from '@chakra-ui/react'
 import { IoBookOutline, IoHeartOutline } from 'react-icons/io5'
-import { BsTruck } from "react-icons/bs";
-import type { IconType } from 'react-icons';
+import { BsTruck } from 'react-icons/bs'
+import type { IconType } from 'react-icons'
 
 type Benefit = {
   id: string
