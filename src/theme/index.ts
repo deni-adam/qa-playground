@@ -27,6 +27,14 @@ const config = defineConfig({
           50: { value: '#FAFBFF' },
           200: { value: '#DCE5F2' },
         },
+        accent: {
+          500: { value: '#287BFA' },
+        },
+        hero: {
+          archBlue: { value: '#DCEBFA' },
+          archSky: { value: '#CFE4F8' },
+          archLavender: { value: '#E2E5F8' },
+        },
       },
       fonts: {
         heading: { value: "'Plus Jakarta Sans', sans-serif" },
@@ -77,8 +85,8 @@ const config = defineConfig({
   },
   globalCss: {
     body: {
-      bg: '#FAFBFF',
-      color: '#202E4A',
+      bg: 'background.page',
+      color: 'text.primary',
       fontFamily: 'body',
     },
   },
