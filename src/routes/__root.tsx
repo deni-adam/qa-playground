@@ -17,8 +17,8 @@ export const Route = createRootRoute({
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
       },
+      { title: 'Bookly | Discover Your Next Great Read' },
     ],
-    title: 'Bookly | Discover Your Next Great Read',
     links: [
       {
         rel: 'stylesheet',
